@@ -1,0 +1,85 @@
+@-webkit-keyframes selected-flash {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #F2FAF2;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+.notes-list {
+  list-style-type: none;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  box-sizing: border-box;
+
+  li {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in;
+    box-sizing: border-box;
+
+    &:first-child {
+      border-top: 1px solid #ddd;
+    }
+
+    &:hover {
+      background-color: #f9f9f9;
+    }
+
+    &.selected-flash {
+      -webkit-animation: selected-flash 0.43s ease-in;
+    }
+  }
+
+  li span {
+    display: table-cell;
+    font-size: 17px;
+
+    &.name {
+      width: 30%;
+      color: #777;
+    }
+
+    &.remove {
+      width: 25px;
+      height: 25px;
+      position: relative;
+      cursor: pointer;
+
+      &:before,
+      &:after {
+        content: "";
+        width: 20px;
+        height: 2px;
+        background-color: #ddd;
+        display: block;
+        position: absolute;
+        top: 12px;
+        left: 3px;
+        transition: background-color 0.1s ease-in;
+      }
+
+      &:before {
+        transform: rotate(45deg);
+      }
+
+      &:after {
+        transform: rotate(-45deg);
+      }
+
+      &:hover:before,
+      &:hover:after {
+        background-color: #999;
+      }
+    }
+  }
+}

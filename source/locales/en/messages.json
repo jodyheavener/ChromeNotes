@@ -1,0 +1,22 @@
+{
+    "appName": {
+        "message": "Notes",
+        "description": "The title of the application, displayed in the web store"
+    },
+    "appDescription": {
+        "message": "Save and retrieve short notes to your Chrome Omnibox",
+        "description": "The description of the application, displayed in the web store"
+    },
+    "omniboxKeyword": {
+        "message": "notes",
+        "description": "The keyword used to trigger an Omnibox command"
+    },
+    "savedNote": {
+        "message": "Saved note",
+        "description": "Prompt selection of saved note"
+    },
+    "removeNote": {
+        "message": "Remove note",
+        "description": "Prompt removal of selected note"
+    }
+}

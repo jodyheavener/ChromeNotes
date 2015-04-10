@@ -1,0 +1,20 @@
+body {
+  background-color: #fcfcfc;
+  font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, arial;
+  font-size: 16px;
+}
+
+.emblem {
+  background: url("../icons/256.png") no-repeat;
+  background-size: 100% auto;
+  background-size: cover;
+  width: 128px;
+  height: 128px;
+  margin: 50px auto 0;
+}
+
+.select-text {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
